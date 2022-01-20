@@ -65,12 +65,12 @@ def run():
     while(len(wordlist) > 0):
         bes = best(wordlist)
         if (bes[1] > 0):
-            print("best choice is: " + bes[0] + " (" + str(bes[1]) + " total info)")
+            print("best word is: " + bes[0] + " (" + str(bes[1]) + " total info)")
         else:
             print("no more info to give")
             return
 
-        inp = input("enter result: ").strip()
+        inp = input().strip()
         while(not checkin(inp)):
             if inp == "":
                 return
